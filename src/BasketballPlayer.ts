@@ -4,8 +4,8 @@ type Play = {
 
 const PLAYS_TO_RUN = 100_000_000;
 
-// LOL imagine trying to have to remember 10_000_000 plays
-const TEAM_PLAYS = Array.from({ length: 100_000 }, () =>
+// LOL imagine trying to have to remember 100_000_000 plays
+const TEAM_PLAYS = Array.from({ length: PLAYS_TO_RUN }, () =>
   Math.floor(Math.random() * 9).toString()
 );
 
