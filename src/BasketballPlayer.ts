@@ -49,14 +49,6 @@ class BasketballPlayer {
     }
   }
 
-  // the critical path case for practice
-  async fullPractice(times: number = 1000) {
-    this.dribble(times);
-    await this.shoot(times);
-    await this.liftWeights();
-    this.runPlays(PLAYS_TO_RUN);
-  }
-
   // practice which calls all the above methods
   async practice(times: number = 1000) {
     this.dribble(times);
